@@ -19,6 +19,8 @@ defmodule Superfundme.Router do
     get "/", PageController, :index
   end
 
+  resources "/sites", SiteController
+
   # Other scopes may use custom stacks.
   # scope "/api", Superfundme do
   #   pipe_through :api
