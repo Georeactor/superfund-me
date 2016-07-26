@@ -1,36 +1,43 @@
 <div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}", name: "Phoenix!" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+  <h2>Map the Environment</h2>
+  <p class="lead">Use open data to map and monitor cleanup and redevelopment of
+  Superfunds - America's worst environmental disasters.</p>
+  <a href="/sites" class="btn btn-success">Is One Near Me?</a>
 </div>
 
 <div class="row marketing">
-  <div class="col-lg-6">
-    <h4>Resources</h4>
-    <ul>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="http://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul>
+  <div class="col-lg-6 col-me">
+    <h4>We Mapped It</h4>
+    <a href="http://www.openstreetmap.org/#map=15/46.0118/-112.5078">
+      <img src="http://66.media.tumblr.com/tumblr_m22lloGhZP1rtp6juo1_500.png"/>
+      <br/>
+      <h4>Berkeley Pit, Butte, Montana</h4>
+    </a>
+
+    <a href="http://www.openstreetmap.org/#map=17/36.98646/-94.83801">
+      <img src="http://66.media.tumblr.com/636999259d586e16b879986f08b122d8/tumblr_mj44usbRaK1rtp6juo1_500.png"/>
+      <br/>
+      <h4>Picher, Oklahoma</h4>
+    </a>
   </div>
 
   <div class="col-lg-6">
-    <h4>Help</h4>
-    <ul>
-      <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
-      </li>
-      <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
-      </li>
-    </ul>
+    <h4>Mapping Help</h4>
+    <a href="https://www.openstreetmap.org/user/new">
+      <h4>Register on OpenStreetMap</h4>
+    </a>
+    <p>To edit the map, you need to create a username.</p>
+    <hr/>
+    <a href="https://www.youtube.com/watch?v=Ir-3K0pjwOI">
+      <h4>Video: Learn How to Map</h4>
+    </a>
+    <p>You can trace maps from your couch, without any field work. Draw, label, and publish.</p>
+    <hr/>
+    <a href="http://mapgive.state.gov/why-map/">
+      <h4>Why map?</h4>
+    </a>
+    <p>Volunteers like you can help trace roads, buildings, and houses using OpenStreetMap that will aid in humanitarian missions.</p>
+    <hr/>
+    <small>via the US State Department's MapGive project (not affiliated with this project)</small>
   </div>
 </div>

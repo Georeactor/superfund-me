@@ -10,6 +10,19 @@ using OpenStreetMap
 * site often includes service roads and other features not in TIGER and other imported data
 * changes frequently
 
+## Technical
+
+Phoenix framework, written in the Elixir language
+
+Follow <a href="http://www.phoenixframework.org/docs/heroku">Phoenix on Heroku documentation</a>
+to set the buildpacks to host the app.
+
+Add Heroku's PostgreSQL database add-on.
+
+Running migrations on Heroku:
+
+```heroku run 'mix ecto.migrate' --app superfundme```
+
 ## License
 
 Open source, MIT license
