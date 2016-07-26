@@ -17,9 +17,9 @@ defmodule Superfundme.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    
+    resources "/sites", SiteController
   end
-
-  resources "/sites", SiteController
 
   # Other scopes may use custom stacks.
   # scope "/api", Superfundme do

@@ -35,8 +35,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :superfundme, Superfundme.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "superfundme_dev",
+  username: "ecto",
+  password: "ecto",
+  database: "superfunddb",
   hostname: "localhost",
   pool_size: 10
