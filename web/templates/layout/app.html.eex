@@ -8,6 +8,7 @@
     <meta name="author" content="Nick Doiron">
 
     <title>Superfund Me</title>
+    <link rel="stylesheet" href="//unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
@@ -33,5 +34,28 @@
 
     </div> <!-- /container -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <script src="//unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+    <script>
+$(function() {
+  if ($('#map').length) {
+    // activate Leaflet map
+    var map = L.map('map');
+    map.attributionControl.setPrefix('');
+
+    // HOT map tiles
+    L.tileLayer('//tile-{s}.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Tiles © <a href="http://mapbox.com">Mapbox</a>',
+      maxZoom: 18
+    }).addTo(map);
+
+    // if single view: add single marker
+    if ($('#lat').length) {
+      var ctr = [$('#lat').val() * 1, $('#lng').val() * 1];
+      map.setView(ctr, 13);
+      L.marker(ctr).addTo(map);
+    }
+  }
+});
+    </script>
   </body>
 </html>
