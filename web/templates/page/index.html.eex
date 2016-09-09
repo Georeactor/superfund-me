@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <h2>Map the Environment</h2>
   <p class="lead">Use open data to map and monitor cleanup and redevelopment of
-  Superfunds - America's worst environmental disasters.</p>
+  <a href="https://en.wikipedia.org/wiki/Superfund">Superfunds</a> - America's worst environmental disasters.</p>
   <a href="/sites" class="btn btn-success">Is One Near Me?</a>
 </div>
 
