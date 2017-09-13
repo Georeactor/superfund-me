@@ -1,5 +1,7 @@
 # Superfund Me
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Georeactor/superfund-me.svg)](https://greenkeeper.io/)
+
 Reviving an old idea - mapping Superfund environmental sites near you and around the United States
 using OpenStreetMap
 
